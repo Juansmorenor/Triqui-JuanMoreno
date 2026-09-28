@@ -1,56 +1,56 @@
-# 🎮 Triqui — Tres en Línea
+# Triqui — Tres en Linea
 
-Juego clásico de Triqui (Tic-Tac-Toe) desarrollado con HTML5, CSS3 y JavaScript vanilla. Sin frameworks, sin librerías externas, 100% funcional en el navegador.
+Juego clasico de Triqui (Tic-Tac-Toe) desarrollado con HTML5, CSS3 y JavaScript vanilla. Sin frameworks, sin librerias externas, 100% funcional en el navegador.
 
-## 👤 Autor
+## Autor
 
-**Juan Sebastián Moreno Rizo**
+**Juan Sebastian Moreno Rizo**
 
-## 📚 Asignatura
+## Asignatura
 
 Desarrollo Full Stack con IA
 
 ---
 
-## ✨ Características
+## Caracteristicas
 
 ### Modos de juego
-- **👤 vs 👤** — Dos jugadores humanos se turnan en el mismo dispositivo
-- **👤 vs 🤖** — Juega contra la computadora con 3 niveles de dificultad:
-  - 🟢 **Fácil** — Movimientos aleatorios, ideal para principiantes
-  - 🟡 **Intermedio** — La IA bloquea y ataca, pero comete errores ocasionales
-  - 🔴 **Difícil** — Algoritmo Minimax perfecto, invencible
+- **Jugador vs Jugador** — Dos jugadores humanos se turnan en el mismo dispositivo
+- **Jugador vs Computadora** — Juega contra la computadora con 3 niveles de dificultad:
+  - **Facil** — Movimientos aleatorios, ideal para principiantes
+  - **Intermedio** — La IA bloquea y ataca, pero comete errores ocasionales
+  - **Dificil** — Algoritmo Minimax perfecto, invencible
 
 ### Funcionalidades
 - Tablero 3x3 interactivo
-- Detección automática de las 8 combinaciones ganadoras
-- Detección de empate
-- Resaltado visual de la combinación ganadora con animación pulsante
+- Deteccion automatica de las 8 combinaciones ganadoras
+- Deteccion de empate
+- Resaltado visual de la combinacion ganadora con animacion pulsante
 - Marcador persistente (victorias de X, O y empates) guardado en `localStorage`
-- Botón "Nueva partida" para reiniciar sin recargar
-- Botón "Reiniciar marcador" con confirmación
+- Boton "Nueva partida" para reiniciar sin recargar
+- Boton "Reiniciar marcador" con confirmacion
 - Bloqueo del tablero al finalizar una partida
 - Indicador visual del turno actual
 
-### Diseño
+### Diseno
 - Interfaz moderna con fondo degradado oscuro
 - Tarjeta principal con efecto glassmorphism
 - Animaciones suaves al colocar fichas (`pop-in`)
-- Animación de victoria en las celdas ganadoras (`win-pulse`)
+- Animacion de victoria en las celdas ganadoras (`win-pulse`)
 - Colores diferenciados para X (rojo) y O (azul)
 - Totalmente responsive para celular, tablet y escritorio
-- Sin desplazamiento horizontal en pantallas pequeñas
+- Sin desplazamiento horizontal en pantallas pequenas
 
 ### Accesibilidad
-- HTML semántico
+- HTML semantico
 - Atributos `aria-label` descriptivos en cada celda
-- Navegación completa con teclado (Enter / Espacio)
+- Navegacion completa con teclado (Enter / Espacio)
 - Estados visuales claros con `focus-visible`
 - Contraste suficiente entre texto y fondo
 
 ---
 
-## 🚀 Cómo ejecutar
+## Como ejecutar
 
 1. Clonar el repositorio:
    ```bash
@@ -58,32 +58,32 @@ Desarrollo Full Stack con IA
    ```
 2. Abrir `index.html` en cualquier navegador moderno
 
-No se necesita servidor, instalación ni conexión a internet.
+No se necesita servidor, instalacion ni conexion a internet.
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologias
 
-| Tecnología | Uso |
+| Tecnologia | Uso |
 |---|---|
-| HTML5 | Estructura semántica y accesible |
-| CSS3 | Diseño responsive, animaciones, flexbox, grid |
-| JavaScript vanilla | Lógica del juego, IA con Minimax, localStorage |
+| HTML5 | Estructura semantica y accesible |
+| CSS3 | Diseno responsive, animaciones, flexbox, grid |
+| JavaScript vanilla | Logica del juego, IA con Minimax, localStorage |
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 triqui/
 ├── index.html    ← Estructura HTML
 ├── style.css     ← Estilos y animaciones
-├── script.js     ← Lógica del juego e IA
+├── script.js     ← Logica del juego e IA
 └── README.md     ← Este archivo
 ```
 
 ---
 
-## 📄 Licencia
+## Licencia
 
-Proyecto académico — Desarrollo Full Stack con IA
+Proyecto academico — Desarrollo Full Stack con IA
