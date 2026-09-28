@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triqui - Tres en Línea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="game-header">
+      <h1 class="game-title">TRIQUI</h1>
+      <p class="game-subtitle">Tres en línea</p>
+    </header>
+
+    <!-- Selector de modo de juego -->
+    <section class="mode-selector" aria-label="Modo de juego">
+      <button class="mode-btn active" id="mode-pvp" aria-pressed="true">👤 vs 👤</button>
+      <button class="mode-btn" id="mode-pvc" aria-pressed="false">👤 vs 🤖</button>
+    </section>
+
+    <!-- Selector de dificultad (solo visible en modo PvC) -->
+    <section class="difficulty-selector hidden" id="difficulty-selector" aria-label="Dificultad">
+      <button class="diff-btn" data-diff="easy" aria-pressed="false">🟢 Fácil</button>
+      <button class="diff-btn active" data-diff="medium" aria-pressed="true">🟡 Intermedio</button>
+      <button class="diff-btn" data-diff="hard" aria-pressed="false">🔴 Difícil</button>
+    </section>
+
+    <section class="turn-indicator" aria-live="polite">
+      <span id="turn-text">Turno de <span class="player-symbol" id="turn-symbol">X</span></span>
+    </section>
+
+    <section class="board-section">
+      <div class="board" role="grid" aria-label="Tablero de Triqui">
+        <button class="cell" data-index="0" role="gridcell" aria-label="Casilla 1, vacía" tabindex="0"></button>
+        <button class="cell" data-index="1" role="gridcell" aria-label="Casilla 2, vacía" tabindex="0"></button>
+        <button class="cell" data-index="2" role="gridcell" aria-label="Casilla 3, vacía" tabindex="0"></button>
+        <button class="cell" data-index="3" role="gridcell" aria-label="Casilla 4, vacía" tabindex="0"></button>
+        <button class="cell" data-index="4" role="gridcell" aria-label="Casilla 5, vacía" tabindex="0"></button>
+        <button class="cell" data-index="5" role="gridcell" aria-label="Casilla 6, vacía" tabindex="0"></button>
+        <button class="cell" data-index="6" role="gridcell" aria-label="Casilla 7, vacía" tabindex="0"></button>
+        <button class="cell" data-index="7" role="gridcell" aria-label="Casilla 8, vacía" tabindex="0"></button>
+        <button class="cell" data-index="8" role="gridcell" aria-label="Casilla 9, vacía" tabindex="0"></button>
+      </div>
+    </section>
+
+    <section class="result-section" aria-live="assertive">
+      <p class="result-message" id="result-message"></p>
+    </section>
+
+    <section class="scoreboard" aria-label="Marcador">
+      <div class="score-item score-x">
+        <span class="score-label">X</span>
+        <span class="score-value" id="score-x">0</span>
+      </div>
+      <div class="score-item score-draw">
+        <span class="score-label">Empates</span>
+        <span class="score-value" id="score-draw">0</span>
+      </div>
+      <div class="score-item score-o">
+        <span class="score-label" id="score-o-label">O</span>
+        <span class="score-value" id="score-o">0</span>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button class="btn btn-primary" id="btn-new-game">Nueva partida</button>
+      <button class="btn btn-secondary" id="btn-reset-score">Reiniciar marcador</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
